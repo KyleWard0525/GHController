@@ -30,7 +30,7 @@ def handleButtonPress():
         for button in buttonPins:
             if GPIO.input(buttonPins[button]) == 0:
                 
-                #Check which LED to light up
+                #Check which led to light up
                 
                 # Green
                 if button == "btnGreen":
