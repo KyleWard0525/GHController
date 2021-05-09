@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
+# Buttons on guitar controller
 buttonPins = {
 
     "btnGreen": 5,
@@ -11,7 +12,7 @@ buttonPins = {
     "slider": 27,
 }
 
-
+# Validation LEDs
 ledPins = {
     
     "ledGreen": 12,
