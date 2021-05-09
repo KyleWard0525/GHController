@@ -52,7 +52,7 @@ def handleButtonPress():
                 else:
                     blinkOrange()
             
-            # Disable LEDs
+            # Disable LED's
             else:
                 cleanup()
 
