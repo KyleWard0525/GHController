@@ -3,6 +3,10 @@ The goal of this project is to take a broken PlayStation 2 Guitar Hero Controlle
 
 The idea is to feed the signal from the button on the guitar controller to a Raspberry Pi 4B which will then interpret the signal and convert it into a simulated keypress that can then be used to play Guitar Hero / Clone Hero.
 
+#v0.2
+- Added strum button
+- Added custom polling rate using time.sleep()
+
 # v0.1
 - Controller has been fixed and is now capable of outputing a signal when a button is pressed
 - Supports all 5 buttons: Green, Red, Yellow, Blue, Orange
