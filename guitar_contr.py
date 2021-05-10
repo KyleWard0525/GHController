@@ -30,7 +30,7 @@ ledPins = {
 
 # Listen for and handle button press events
 def handleButtonPress():
-    strum_count = 0
+    strum_count = 0 # Number of strums
     
     while True:
         for button in buttonPins:
