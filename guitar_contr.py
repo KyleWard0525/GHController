@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
+
+
 # Buttons on guitar controller
 buttonPins = {
 
@@ -9,7 +11,9 @@ buttonPins = {
     "btnYellow": 13,
     "btnBlue": 19,
     "btnOrange": 26,
-    "slider": 27,
+    "btnDown": 17,
+    "btnUp": 4,
+
 }
 
 # Validation LEDs
@@ -26,9 +30,17 @@ ledPins = {
 
 # Listen for and handle button press events
 def handleButtonPress():
+    strum_count = 0
+    
     while True:
         for button in buttonPins:
             if GPIO.input(buttonPins[button]) == 0:
+                    
+                if (button == "btnDown" or button == "btnUp"):
+                    print("strum #" + str(strum_count))
+                    strum_count += 1
+                    time.sleep(0.1167)
+                    
                 
                 #Check which led to light up
                 
